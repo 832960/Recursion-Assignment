@@ -27,7 +27,7 @@ public class Main {
      * @param n must be a positive integer that is not 0
      * @param prev the previous number of the fibonacci sequence (1)
      * @param nextPrev the previous, previous number of the fibonacci sequence (0)
-     * @return returns the n+2 number of the fibonacci sequence
+     * @return returns the n+2 term of the fibonacci sequence
      * e.g. n = 6 returns 13, the 8th number of the fibonacci sequence
      */
     public static int fibonacciSequence(int n, int prev, int nextPrev) {
@@ -41,7 +41,9 @@ public class Main {
 
         int prev = 1;
         int nextPrev = 0;
-        System.out.println("Recursive: " + fibonacciSequence(6, prev, nextPrev));
+        int term = 6;
+        System.out.println("Term " + (term + 2) + " of the fibonacci sequence is: "
+                + fibonacciSequence(term, prev, nextPrev));
 
     }
 
